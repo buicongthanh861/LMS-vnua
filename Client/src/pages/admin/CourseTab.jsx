@@ -55,7 +55,7 @@ const CourseTab = () => {
       coursePrice:selectedCourse?.coursePrice,
       file:""
   })
-  const [previewThumbnail,setPreviewThumbnail] = useState(selectedCourse?.Thumbnail)
+  const [previewThumbnail,setPreviewThumbnail] = useState(selectedCourse?.courseThumbnail)
 
   const changeEventHandler = (e) => {
     const {name,value} = e.target;

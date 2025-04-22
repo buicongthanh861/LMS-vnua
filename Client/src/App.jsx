@@ -14,6 +14,7 @@ import Dashboard from './pages/admin/Dashboard'
 import Course from './pages/admin/Course'
 import CreateCourse from './pages/admin/CreateCourse'
 import UpdateCourse from './pages/admin/UpdateCourse'
+import CreateLecture from './pages/admin/CreateLecture'
 
 
 const router = createBrowserRouter([
@@ -56,7 +57,11 @@ const router = createBrowserRouter([
       {
         path: "course/:courseId",
         element:<UpdateCourse/>
-      }
+      },
+      {
+        path: "course/:courseId/lecture",
+        element:<CreateLecture/>
+      },
     ]
   }
 ])
